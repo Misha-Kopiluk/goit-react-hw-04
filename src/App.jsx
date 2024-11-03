@@ -71,7 +71,7 @@ function App() {
       <SearchBar onSubmit={onSubmit} />
       {loader && <Loader />}
       {error && <ErrorMessage />}
-      <ImageGallery image={image} openModal={openModal} />
+      {image && <ImageGallery image={image} openModal={openModal} />}
       {modalImg && (
         <ImageModal
           modalImg={modalImg}
